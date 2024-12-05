@@ -1,0 +1,8 @@
+services:
+  check-actions:
+    build: .
+    container_name: check-actions
+    stdin_open: true # required for dev entry
+    tty: true # required for dev entry
+    volumes:
+      - .:/code
